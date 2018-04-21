@@ -15,11 +15,11 @@ function maxChar(str) {
         if (charMap[char]) {
             charMap[char]++;
         } else {
-            charMap[char] =1;
+            charMap[char] = 1;
         }
     }
 
-    // iterate through an object, use FOR IN
+    // iterate through ou object, use FOR IN
     for (let char in charMap) {
         if (charMap[char] > max) {
             max = charMap[char];
@@ -29,6 +29,6 @@ function maxChar(str) {
     console.log(charMap);
 }
 
-maxChar('Hello there');
+maxChar('Hello');
 
 module.exports = maxChar;
